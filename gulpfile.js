@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+
 var browserify = require('browserify');
 var watchify = require('watchify');
 var connect = require('gulp-connect');
@@ -12,7 +13,7 @@ gulp.task('scripts', function() {
       .on('error', function(error) {
         console.error(error);
       })
-      .pipe(source('main.js'))
+      .pipe(source('index.js'))
       .pipe(buffer())
       .pipe(gulp.dest('./.tmp/scripts'))
       .pipe(connect.reload());
@@ -32,6 +33,17 @@ gulp.task('html', function() {
     .pipe(gulp.dest('./.tmp/'));
 });
 
+var stylus = require('gulp-stylus');
+var sourcemaps = require('gulp-sourcemaps');
+
+gulp.task('styles', function() {
+  return gulp.src('./styles/index.styl')
+    .pipe(sourcemaps.init())
+    .pipe(stylus())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./.tmp/styles/'))
+});
+
 gulp.task('server', function() {
   return connect.server({
     root: ['./.tmp', './'],
@@ -40,4 +52,4 @@ gulp.task('server', function() {
   });
 });
 
-gulp.task('default', ['server', 'scripts', 'html']);
+gulp.task('default', ['server', 'scripts', 'html', 'styles']);
