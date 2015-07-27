@@ -5,6 +5,7 @@ var _ = require('lodash');
 var Header = require('./header.jsx');
 var Footer = require('./footer.jsx');
 var PageStore = require('fluxes/stores/pages');
+var Sidebar = require('./sidebar.jsx');
 
 module.exports = React.createClass({
   mixins: [Reflux.connect(PageStore, 'page')],
@@ -18,7 +19,16 @@ module.exports = React.createClass({
     return (
       <div>
         <Header/>
-        <PageComponent/>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-9">
+              <PageComponent/>
+            </div>
+            <div className="col-md-3">
+              <Sidebar/>
+            </div>
+          </div>
+        </div>
         <Footer/>
       </div>
     );
