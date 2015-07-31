@@ -8,7 +8,11 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div>
-        <Playground collapsableCode codeText={LinkExample} scope={{React: React, Link: Link}}/>
+        <Playground codeText={LinkExample}
+                    lineNumbers
+                    theme="monokai"
+                    noRender={false}
+                    scope={{React: React, Link: Link}}/>
       </div>
     );
   }

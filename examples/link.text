@@ -1,1 +1,1 @@
-<Link>Test</Link>
+React.render(<Link>Text</Link>, mountNode);
