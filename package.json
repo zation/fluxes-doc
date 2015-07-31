@@ -18,12 +18,13 @@
   },
   "browserify": {
     "transform": [
-      "babelify"
+      "babelify", "stringify"
     ]
   },
   "homepage": "https://github.com/zation/fluxes-doc#readme",
   "dependencies": {
     "bootstrap-styl": "^4.0.5",
+    "codemirror": "^5.5.0",
     "fluxes": "../fluxes",
     "lodash": "^3.10.0",
     "react": "^0.13.3",
@@ -36,6 +37,7 @@
     "gulp-connect": "^2.2.0",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-stylus": "^2.0.5",
+    "stringify": "^3.1.0",
     "stylus": "^0.52.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
