@@ -1,22 +1,22 @@
 var React = require('react');
 var Playground = require('component-playground');
 
-var Link = require('fluxes/components/link.jsx');
+var BackButton = require('fluxes/components/back-button.jsx');
 
 module.exports = React.createClass({
   render: function() {
     return (
       <div>
-        <h2>Link</h2>
+        <h2>Back Button</h2>
 
-        <p>Link Component wrapper. Add route support.</p>
+        <p>Click to back to previous page.</p>
 
-        <Playground codeText={require('../examples/link.text')}
+        <Playground codeText={require('../examples/back-button.text')}
                     lineNumbers
                     previewFirst
                     mode="htmlembedded"
                     theme="base16-light"
-                    scope={{React: React, Link: Link}}/>
+                    scope={{React: React, BackButton: BackButton}}/>
       </div>
     );
   }

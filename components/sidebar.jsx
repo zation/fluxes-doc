@@ -10,7 +10,7 @@ module.exports = React.createClass({
             <Link href="/components/link">Link</Link>
           </li>
           <li>
-            Test 2
+            <Link href="/components/back-button">Back Button</Link>
           </li>
         </ul>
       </nav>
