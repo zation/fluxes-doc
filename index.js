@@ -6,6 +6,7 @@ var routes = require('./routes');
 
 global.CodeMirror = require('codemirror');
 require('codemirror/mode/javascript/javascript');
+require('codemirror/mode/htmlembedded/htmlembedded');
 
 React.render(React.createElement(Page), window.document.getElementById('page'));
 

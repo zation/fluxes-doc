@@ -16,7 +16,8 @@ module.exports = React.createClass({
         <Playground codeText={LinkExample}
                     lineNumbers
                     previewFirst
-                    theme="monokai"
+                    mode="htmlembedded"
+                    theme="base16-light"
                     noRender={false}
                     scope={{React: React, Link: Link}}/>
       </div>
