@@ -18,7 +18,6 @@ module.exports = React.createClass({
                     previewFirst
                     mode="htmlembedded"
                     theme="base16-light"
-                    noRender={false}
                     scope={{React: React, Link: Link}}/>
       </div>
     );

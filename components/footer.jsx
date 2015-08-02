@@ -6,7 +6,6 @@ module.exports = React.createClass({
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            Footer
           </div>
         </div>
       </div>
