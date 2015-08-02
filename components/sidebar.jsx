@@ -12,6 +12,9 @@ module.exports = React.createClass({
           <li>
             <Link href="/components/back-button">Back Button</Link>
           </li>
+          <li>
+            <Link href="/components/modal">Modal</Link>
+          </li>
         </ul>
       </nav>
     );

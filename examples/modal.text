@@ -1,0 +1,37 @@
+var ModalExample = React.createClass({
+  openModal: function() {
+    this.refs.modal.open();
+  },
+
+  closeModal: function() {
+    this.refs.modal.close();
+  },
+
+  alert: function(message) {
+    alert(message);
+  },
+
+  render: function() {
+    return (
+      <div>
+        <button className="btn btn-primary"
+                onClick={this.openModal}>
+          Open Modal
+        </button>
+
+        <Modal title="Modal Example"
+               onClose={this.alert.bind(this, 'The modal is closed')}
+               onOpen={this.alert.bind(this, 'The modal will open')}
+               ref="modal">
+          <div className="modal-body">
+            <p>This is a modal example</p>
+            <button className="btn btn-primary" onClick={this.closeModal}>OK</button>&nbsp;
+            <button className="btn btn-danger" data-dismiss="modal">Cancel</button>
+          </div>
+        </Modal>
+      </div>
+    );
+  }
+});
+
+React.render(<ModalExample/>, mountNode);
