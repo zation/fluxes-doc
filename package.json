@@ -26,6 +26,7 @@
   "dependencies": {
     "bootstrap-styl": "^4.0.5",
     "codemirror": "^5.5.0",
+    "component-playground": "zation/component-playground#master",
     "fluxes": "../fluxes",
     "lodash": "^3.10.0",
     "react": "^0.13.3",
