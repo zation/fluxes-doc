@@ -4,6 +4,7 @@ var Home = require('./pages/home.jsx');
 var Link = require('./pages/link.jsx');
 var BackButton = require('./pages/back-button.jsx');
 var Modal = require('./pages/modal.jsx');
+var Confirmation = require('./pages/confirmation.jsx');
 
 module.exports = {
   '/': function() {
@@ -17,5 +18,8 @@ module.exports = {
   },
   '/components/modal': function() {
     PageAction.render(Modal);
+  },
+  '/components/confirmation': function() {
+    PageAction.render(Confirmation);
   }
 };

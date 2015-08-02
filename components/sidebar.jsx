@@ -15,6 +15,9 @@ module.exports = React.createClass({
           <li>
             <Link href="/components/modal">Modal</Link>
           </li>
+          <li>
+            <Link href="/components/confirmation">Confirmation</Link>
+          </li>
         </ul>
       </nav>
     );
