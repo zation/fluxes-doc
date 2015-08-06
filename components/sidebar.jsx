@@ -18,6 +18,9 @@ module.exports = React.createClass({
           <li>
             <Link href="/components/confirmation">Confirmation</Link>
           </li>
+          <li>
+            <Link href="/components/feedback-button">Feedback Button</Link>
+          </li>
         </ul>
       </nav>
     );

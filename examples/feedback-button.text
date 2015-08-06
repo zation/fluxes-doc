@@ -1,0 +1,16 @@
+var FeedbackButtonExample = React.createClass({
+  onClick: function() {
+    return new Promise(function(resolve) {
+      window.setTimeout(resolve, 1000);
+    });
+  },
+
+  render: function() {
+    return (
+      <FeedbackButton className="btn btn-primary"
+                      onClick={this.onClick}>Feedback Button</FeedbackButton>
+    );
+  }
+});
+
+React.render(<FeedbackButtonExample/>, mountNode);

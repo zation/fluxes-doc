@@ -5,6 +5,7 @@ var Link = require('./pages/link.jsx');
 var BackButton = require('./pages/back-button.jsx');
 var Modal = require('./pages/modal.jsx');
 var Confirmation = require('./pages/confirmation.jsx');
+var FeedbackButton = require('./pages/feedback-button.jsx');
 
 module.exports = {
   '/': function() {
@@ -21,5 +22,8 @@ module.exports = {
   },
   '/components/confirmation': function() {
     PageAction.render(Confirmation);
+  },
+  '/components/feedback-button': function() {
+    PageAction.render(FeedbackButton);
   }
 };
