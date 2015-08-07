@@ -3,7 +3,9 @@ var SwitcherExample = React.createClass({
     return (
       <div>
         <Switcher/> <br/>
-        <Switcher type="flat"/>
+        <Switcher equal/> <br/>
+        <Switcher type="flat"/> <br/>
+        <Switcher type="flat" equal/>
       </div>
     );
   }
