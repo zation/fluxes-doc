@@ -1,0 +1,12 @@
+var SwitcherExample = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <Switcher/> <br/>
+        <Switcher type="flat"/>
+      </div>
+    );
+  }
+});
+
+React.render(<SwitcherExample/>, mountNode);

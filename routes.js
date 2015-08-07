@@ -6,6 +6,7 @@ var BackButton = require('./pages/back-button.jsx');
 var Modal = require('./pages/modal.jsx');
 var Confirmation = require('./pages/confirmation.jsx');
 var FeedbackButton = require('./pages/feedback-button.jsx');
+var Switcher = require('./pages/switcher.jsx');
 
 module.exports = {
   '/': function() {
@@ -25,5 +26,8 @@ module.exports = {
   },
   '/components/feedback-button': function() {
     PageAction.render(FeedbackButton);
+  },
+  '/components/switcher': function() {
+    PageAction.render(Switcher);
   }
 };

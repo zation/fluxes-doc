@@ -21,6 +21,9 @@ module.exports = React.createClass({
           <li>
             <Link href="/components/feedback-button">Feedback Button</Link>
           </li>
+          <li>
+            <Link href="/components/switcher">Switcher</Link>
+          </li>
         </ul>
       </nav>
     );
