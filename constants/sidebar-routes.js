@@ -1,6 +1,6 @@
 module.exports = [{
   path: '/',
-  text: 'Home',
+  text: 'Getting Started',
   component: require('../pages/home.jsx')
 }, {
   path: '/components/link',

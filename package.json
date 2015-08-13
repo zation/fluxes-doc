@@ -29,6 +29,7 @@
     "codemirror": "^5.5.0",
     "component-playground": "zation/component-playground#master",
     "fluxes": "../fluxes",
+    "highlight.js": "^8.7.0",
     "jquery": "1.11.3",
     "react": "0.13.3",
     "reflux": "0.2.11"
