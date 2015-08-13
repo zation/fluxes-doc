@@ -11,7 +11,7 @@ module.exports = React.createClass({
 
         <p>Button based on ladda</p>
 
-        <Playground codeText={require('../examples/feedback-button.text')}
+        <Playground codeText={require('../examples/feedback-button.example')}
                     lineNumbers
                     previewFirst
                     noRender={false}

@@ -5,6 +5,7 @@ var watchify = require('watchify');
 var connect = require('gulp-connect');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
+var stringify = require('stringify');
 
 gulp.task('scripts', function() {
 
@@ -19,11 +20,15 @@ gulp.task('scripts', function() {
       .pipe(connect.reload());
   };
 
-  var bundler = watchify(browserify('./index.js', {
-    cache: {},
-    packageCache: {},
-    debug: true
-  })).on('update', bundle);
+  var bundler = watchify(
+    browserify('./index.js', {
+      cache: {},
+      packageCache: {},
+      debug: true
+    }).transform(
+      stringify(['.example', '.md'])
+    )
+  ).on('update', bundle);
 
   return bundle.apply(bundler);
 });

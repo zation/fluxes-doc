@@ -12,7 +12,8 @@ module.exports = React.createClass({
 
         <p>Confirmation component.</p>
 
-        <Playground codeText={require('../examples/confirmation.text')}
+
+        <Playground codeText={require('../examples/confirmation.example')}
                     lineNumbers
                     previewFirst
                     noRender={false}

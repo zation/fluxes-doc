@@ -18,8 +18,7 @@
   },
   "browserify": {
     "transform": [
-      "babelify",
-      "stringify"
+      "babelify"
     ]
   },
   "homepage": "https://github.com/zation/fluxes-doc#readme",
