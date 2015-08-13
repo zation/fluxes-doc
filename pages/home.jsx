@@ -1,10 +1,13 @@
 var React = require('react');
 var HighLight = require('highlight.js');
 var marked = require('marked');
+var $ = require('jquery');
 
 module.exports = React.createClass({
   componentDidMount: function() {
-    HighLight.initHighlighting();
+    $(this.getDOMNode()).find('pre code').each(function(index, block) {
+      HighLight.highlightBlock(block);
+    });
   },
 
   render: function() {
