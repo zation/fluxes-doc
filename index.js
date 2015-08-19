@@ -1,3 +1,5 @@
+require('style!css!stylus!./styles/index.styl');
+
 var React = require('react');
 global.jQuery = require('jquery');
 
@@ -11,5 +13,3 @@ require('codemirror/mode/htmlembedded/htmlembedded');
 React.render(React.createElement(Page), window.document.getElementById('page'));
 
 Router.create(require('./routes'));
-
-require('style!css!stylus!./styles/index.styl');
