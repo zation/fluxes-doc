@@ -12,7 +12,7 @@ module.exports = React.createClass({
 
   render: function() {
     return (
-      <div dangerouslySetInnerHTML={{__html: marked(require('../documents/getting-started.md'))}}></div>
+      <div dangerouslySetInnerHTML={{__html: marked(require('raw!../documents/getting-started.md'))}}></div>
     );
   }
 });

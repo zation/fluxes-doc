@@ -11,7 +11,7 @@ module.exports = React.createClass({
 
         <p>Click to back to previous page.</p>
 
-        <Playground codeText={require('../examples/back-button.example')}
+        <Playground codeText={require('raw!../examples/back-button.example')}
                     lineNumbers
                     previewFirst
                     mode="htmlembedded"

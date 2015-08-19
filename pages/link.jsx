@@ -11,7 +11,7 @@ module.exports = React.createClass({
 
         <p>Link Component wrapper. Add route support.</p>
 
-        <Playground codeText={require('../examples/link.example')}
+        <Playground codeText={require('raw!../examples/link.example')}
                     lineNumbers
                     previewFirst
                     mode="htmlembedded"

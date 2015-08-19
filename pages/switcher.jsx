@@ -11,7 +11,7 @@ module.exports = React.createClass({
 
         <p>Switcher Component</p>
 
-        <Playground codeText={require('../examples/switcher.example')}
+        <Playground codeText={require('raw!../examples/switcher.example')}
                     lineNumbers
                     previewFirst
                     noRender={false}

@@ -11,7 +11,7 @@ module.exports = React.createClass({
 
         <p>Modal Component</p>
 
-        <Playground codeText={require('../examples/modal.example')}
+        <Playground codeText={require('raw!../examples/modal.example')}
                     lineNumbers
                     previewFirst
                     noRender={false}
