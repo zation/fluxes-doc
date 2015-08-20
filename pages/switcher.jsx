@@ -1,7 +1,6 @@
 var React = require('react');
-var Playground = require('component-playground');
 
-var Switcher = require('fluxes/components/switcher.jsx');
+var Example = require('../components/example.jsx');
 
 module.exports = React.createClass({
   render: function() {
@@ -11,13 +10,8 @@ module.exports = React.createClass({
 
         <p>Switcher Component</p>
 
-        <Playground codeText={require('raw!../examples/switcher.example')}
-                    lineNumbers
-                    previewFirst
-                    noRender={false}
-                    mode="htmlembedded"
-                    theme="base16-light"
-                    scope={{React: React, Switcher: Switcher}}/>
+        <Example code={require('!!raw!../examples/switcher.jsx')}
+                 component={require('../examples/switcher.jsx')}/>
       </div>
     );
   }

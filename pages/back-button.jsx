@@ -1,9 +1,10 @@
 var React = require('react');
-var Playground = require('component-playground');
 
-var BackButton = require('fluxes/components/back-button.jsx');
+var Example = require('../components/example.jsx');
 
 module.exports = React.createClass({
+
+
   render: function() {
     return (
       <div>
@@ -11,12 +12,8 @@ module.exports = React.createClass({
 
         <p>Click to back to previous page.</p>
 
-        <Playground codeText={require('raw!../examples/back-button.example')}
-                    lineNumbers
-                    previewFirst
-                    mode="htmlembedded"
-                    theme="base16-light"
-                    scope={{React: React, BackButton: BackButton}}/>
+        <Example code={require('!!raw!../examples/back-button.jsx')}
+                 component={require('../examples/back-button.jsx')}/>
       </div>
     );
   }

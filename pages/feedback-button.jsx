@@ -1,7 +1,6 @@
 var React = require('react');
-var Playground = require('component-playground');
 
-var FeedbackButton = require('fluxes/components/feedback-button.jsx');
+var Example = require('../components/example.jsx');
 
 module.exports = React.createClass({
   render: function() {
@@ -11,13 +10,8 @@ module.exports = React.createClass({
 
         <p>Button based on ladda</p>
 
-        <Playground codeText={require('raw!../examples/feedback-button.example')}
-                    lineNumbers
-                    previewFirst
-                    noRender={false}
-                    mode="htmlembedded"
-                    theme="base16-light"
-                    scope={{React: React, FeedbackButton: FeedbackButton}}/>
+        <Example code={require('!!raw!../examples/feedback-button.jsx')}
+                 component={require('../examples/feedback-button.jsx')}/>
       </div>
     );
   }

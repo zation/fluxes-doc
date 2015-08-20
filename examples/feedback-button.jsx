@@ -1,4 +1,7 @@
-var FeedbackButtonExample = React.createClass({
+var React = require('react');
+var FeedbackButton = require('fluxes/components/feedback-button.jsx');
+
+module.exports = React.createClass({
   onClick: function() {
     return new Promise(function(resolve) {
       window.setTimeout(resolve, 1000);
@@ -12,5 +15,3 @@ var FeedbackButtonExample = React.createClass({
     );
   }
 });
-
-React.render(<FeedbackButtonExample/>, mountNode);

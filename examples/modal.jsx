@@ -1,4 +1,7 @@
-var ModalExample = React.createClass({
+var React = require('react');
+var Modal = require('fluxes/components/modal.jsx');
+
+module.exports = React.createClass({
   openModal: function() {
     this.refs.modal.open();
   },
@@ -35,5 +38,3 @@ var ModalExample = React.createClass({
     );
   }
 });
-
-React.render(<ModalExample/>, mountNode);

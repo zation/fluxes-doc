@@ -1,7 +1,6 @@
 var React = require('react');
-var Playground = require('component-playground');
 
-var Link = require('fluxes/components/link.jsx');
+var Example = require('../components/example.jsx');
 
 module.exports = React.createClass({
   render: function() {
@@ -11,12 +10,8 @@ module.exports = React.createClass({
 
         <p>Link Component wrapper. Add route support.</p>
 
-        <Playground codeText={require('raw!../examples/link.example')}
-                    lineNumbers
-                    previewFirst
-                    mode="htmlembedded"
-                    theme="base16-light"
-                    scope={{React: React, Link: Link}}/>
+        <Example code={require('!!raw!../examples/link.jsx')}
+                 component={require('../examples/link.jsx')}/>
       </div>
     );
   }

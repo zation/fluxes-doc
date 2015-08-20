@@ -1,7 +1,6 @@
 var React = require('react');
-var Playground = require('component-playground');
 
-var Modal = require('fluxes/components/modal.jsx');
+var Example = require('../components/example.jsx');
 
 module.exports = React.createClass({
   render: function() {
@@ -11,13 +10,8 @@ module.exports = React.createClass({
 
         <p>Modal Component</p>
 
-        <Playground codeText={require('raw!../examples/modal.example')}
-                    lineNumbers
-                    previewFirst
-                    noRender={false}
-                    mode="htmlembedded"
-                    theme="base16-light"
-                    scope={{React: React, Modal: Modal}}/>
+        <Example code={require('!!raw!../examples/modal.jsx')}
+                 component={require('../examples/modal.jsx')}/>
       </div>
     );
   }

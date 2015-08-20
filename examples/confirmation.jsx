@@ -1,4 +1,8 @@
-var ConfirmationExample = React.createClass({
+var React = require('react');
+var ConfirmationAction = require('fluxes/actions/confirmation');
+var Confirmation = require('fluxes/components/confirmation.jsx');
+
+module.exports = React.createClass({
   deleteUser: function() {
     ConfirmationAction.ask({
       message: 'Do you really want to delete this user?',
@@ -24,5 +28,3 @@ var ConfirmationExample = React.createClass({
     );
   }
 });
-
-React.render(<ConfirmationExample/>, mountNode);

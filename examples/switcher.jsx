@@ -1,4 +1,7 @@
-var SwitcherExample = React.createClass({
+var React = require('react');
+var Switcher = require('fluxes/components/switcher.jsx');
+
+module.exports = React.createClass({
   render: function() {
     return (
       <div>
@@ -10,5 +13,3 @@ var SwitcherExample = React.createClass({
     );
   }
 });
-
-React.render(<SwitcherExample/>, mountNode);

@@ -17,9 +17,6 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
-  resolve: {
-    extensions: ['', '.js', '.jsx']
-  },
   module: {
     loaders: [{
       test: /\.jsx$/,
@@ -28,7 +25,6 @@ module.exports = {
         path.join(__dirname, 'components'),
         path.join(__dirname, 'pages'),
         path.join(__dirname, 'examples'),
-        path.join(__dirname, 'node_modules/component-playground/src'),
         path.join(__dirname, 'node_modules/fluxes/components')
       ]
     }]
