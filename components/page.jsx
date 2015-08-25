@@ -22,7 +22,7 @@ module.exports = React.createClass({
         <div className="container">
           <div className="row">
             <div className="col-md-9">
-              <PageComponent/>
+              <PageComponent {...this.state.page.props} />
             </div>
             <div className="col-md-3">
               <Sidebar/>
