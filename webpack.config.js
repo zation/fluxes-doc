@@ -18,6 +18,7 @@ module.exports = {
     new webpack.NoErrorsPlugin()
   ],
   module: {
+    noParse: [/babel-core\/browser/],
     loaders: [{
       test: /\.jsx$/,
       loaders: ['react-hot-loader', 'babel-loader'],
