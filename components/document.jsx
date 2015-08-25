@@ -8,7 +8,7 @@ var _ = require('lodash');
 var renderer = require('../libs/doc-with-example-renderer');
 
 module.exports = React.createClass({
-  componentDidMount: function() {
+  updatePreview: function() {
     var context = _.clone(this.props.context);
     if (_.isUndefined(context)) {
       $(this.getDOMNode()).find('pre code').each(function() {
@@ -41,6 +41,14 @@ module.exports = React.createClass({
         );
       }
     });
+  },
+
+  componentDidMount: function() {
+    this.updatePreview();
+  },
+
+  componentDidUpdate: function() {
+    this.updatePreview();
   },
 
   render: function() {
