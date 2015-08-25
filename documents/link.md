@@ -6,7 +6,7 @@ Link component will use the same props as `a` tag.
 
 A link which `href` is an internal link. will go to another page inside your app.
 
-```js
+```js-example
 var React = require('react');
 var Link = require('fluxes/components/link.jsx');
 
@@ -25,7 +25,7 @@ module.exports = React.createClass({
 
 A link without `href` is a button link. It will call the function of `onClick`.
 
-```js
+```js-example
 var React = require('react');
 var Link = require('fluxes/components/link.jsx');
 
@@ -49,7 +49,7 @@ module.exports = React.createClass({
 A link which `href` starts with "http" or `target` is `blank` is an external link.
 It will go to another page outside your app.
 
-```js
+```js-example
 var React = require('react');
 var Link = require('fluxes/components/link.jsx');
 

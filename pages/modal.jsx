@@ -8,8 +8,7 @@ module.exports = React.createClass({
       <Document markdown={require('raw!../documents/modal.md')}
                 context={{
                 Modal: require('fluxes/components/modal.jsx')
-                }}>
-      </Document>
+                }}/>
     );
   }
 });

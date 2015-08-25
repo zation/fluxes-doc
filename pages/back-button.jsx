@@ -8,8 +8,7 @@ module.exports = React.createClass({
       <Document markdown={require('raw!../documents/back-button.md')}
                 context={{
                 BackButton: require('fluxes/components/back-button.jsx')
-                }}>
-      </Document>
+                }}/>
     );
   }
 });

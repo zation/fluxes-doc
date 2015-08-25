@@ -9,8 +9,7 @@ module.exports = React.createClass({
                 context={{
                 Confirmation: require('fluxes/components/confirmation.jsx'),
                 ConfirmationAction: require('fluxes/actions/confirmation')
-                }}>
-      </Document>
+                }}/>
     );
   }
 });

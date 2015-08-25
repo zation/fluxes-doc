@@ -8,8 +8,7 @@ module.exports = React.createClass({
       <Document markdown={require('raw!../documents/switcher.md')}
                 context={{
                 Switcher: require('fluxes/components/switcher.jsx')
-                }}>
-      </Document>
+                }}/>
     );
   }
 });

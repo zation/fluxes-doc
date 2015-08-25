@@ -10,6 +10,13 @@ var renderer = require('../libs/doc-with-example-renderer');
 module.exports = React.createClass({
   componentDidMount: function() {
     var context = _.clone(this.props.context);
+    if (_.isUndefined(context)) {
+      $(this.getDOMNode()).find('pre code').each(function() {
+        HighLight.highlightBlock(this);
+      });
+      return;
+    }
+
     context.React = React;
     var contextValues = [];
     var contextNames = [];

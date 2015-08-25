@@ -2,7 +2,7 @@
 
 Modal component.
 
-```js
+```js-example
 var React = require('react');
 var Modal = require('fluxes/components/modal.jsx');
 

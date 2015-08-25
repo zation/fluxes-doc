@@ -2,7 +2,7 @@
 
 Confirmation Component
 
-```js
+```js-example
 var React = require('react');
 var ConfirmationAction = require('fluxes/actions/confirmation');
 var Confirmation = require('fluxes/components/confirmation.jsx');

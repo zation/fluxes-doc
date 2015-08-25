@@ -8,8 +8,7 @@ module.exports = React.createClass({
       <Document markdown={require('raw!../documents/link.md')}
                 context={{
                 Link: require('fluxes/components/link.jsx')
-                }}>
-      </Document>
+                }}/>
     );
   }
 });

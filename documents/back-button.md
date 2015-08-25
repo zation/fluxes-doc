@@ -2,7 +2,7 @@
 
 A back button
 
-```js
+```js-example
 var BackButton = require('fluxes/components/back-button.jsx');
 var React = require('react');
 

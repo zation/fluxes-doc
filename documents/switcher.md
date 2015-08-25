@@ -2,7 +2,7 @@
 
 Switcher component.
 
-```js
+```js-example
 var React = require('react');
 var Switcher = require('fluxes/components/switcher.jsx');
 
