@@ -5,9 +5,7 @@ var $ = require('jquery');
 var HighLight = require('highlight.js');
 var _ = require('lodash');
 
-var markdown = require('raw!../documents/back-button.md');
 var renderer = require('../libs/doc-with-example-renderer');
-var html = marked(markdown, {renderer: renderer});
 
 module.exports = React.createClass({
   componentDidMount: function() {
@@ -20,7 +18,7 @@ module.exports = React.createClass({
       contextValues.push(value);
     });
 
-    $(this.getDOMNode()).find('code').each(function(index, element) {
+    $(this.getDOMNode()).find('pre code').each(function(index, element) {
       var $element = $(element);
       HighLight.highlightBlock(element);
 
@@ -39,6 +37,7 @@ module.exports = React.createClass({
   },
 
   render: function() {
+    var html = marked(this.props.doc, {renderer: renderer});
     return (
       <div dangerouslySetInnerHTML={{__html: html}}></div>
     );
