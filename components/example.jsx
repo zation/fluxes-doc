@@ -18,7 +18,9 @@ module.exports = React.createClass({
           <Component/>
         </div>
           <pre>
-            <code ref="code" dangerouslySetInnerHTML={{__html: htmlEncode(this.props.code)}}></code>
+            <code className="javascript"
+                  ref="code"
+                  dangerouslySetInnerHTML={{__html: htmlEncode(this.props.code)}}></code>
           </pre>
       </div>
     );
