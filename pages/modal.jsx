@@ -1,18 +1,15 @@
 var React = require('react');
 
-var Example = require('../components/example.jsx');
+var PageWithExample = require('../components/page-with-example.jsx');
 
 module.exports = React.createClass({
   render: function() {
     return (
-      <div>
-        <h2>Modal</h2>
-
-        <p>Modal Component</p>
-
-        <Example code={require('!!raw!../examples/modal.jsx')}
-                 component={require('../examples/modal.jsx')}/>
-      </div>
+      <PageWithExample doc={require('raw!../documents/modal.md')}
+                       context={{
+                       Modal: require('fluxes/components/modal.jsx')
+                       }}>
+      </PageWithExample>
     );
   }
 });

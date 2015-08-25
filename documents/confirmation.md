@@ -1,3 +1,8 @@
+## Confirmation
+
+Confirmation Component
+
+```js
 var React = require('react');
 var ConfirmationAction = require('fluxes/actions/confirmation');
 var Confirmation = require('fluxes/components/confirmation.jsx');
@@ -28,3 +33,5 @@ module.exports = React.createClass({
     );
   }
 });
+
+```

@@ -1,3 +1,8 @@
+## Feedback Button
+
+Button based on Ladda
+
+```js
 var React = require('react');
 var FeedbackButton = require('fluxes/components/feedback-button.jsx');
 
@@ -15,3 +20,4 @@ module.exports = React.createClass({
     );
   }
 });
+```

@@ -1,18 +1,15 @@
 var React = require('react');
 
-var Example = require('../components/example.jsx');
+var PageWithExample = require('../components/page-with-example.jsx');
 
 module.exports = React.createClass({
   render: function() {
     return (
-      <div>
-        <h2>Switcher</h2>
-
-        <p>Switcher Component</p>
-
-        <Example code={require('!!raw!../examples/switcher.jsx')}
-                 component={require('../examples/switcher.jsx')}/>
-      </div>
+      <PageWithExample doc={require('raw!../documents/switcher.md')}
+                       context={{
+                       Switcher: require('fluxes/components/switcher.jsx')
+                       }}>
+      </PageWithExample>
     );
   }
 });

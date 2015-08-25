@@ -6,7 +6,9 @@ module.exports = React.createClass({
   render: function() {
     return (
       <PageWithExample doc={require('raw!../documents/back-button.md')}
-                       context={{BackButton: require('fluxes/components/back-button.jsx')}}>
+                       context={{
+                       BackButton: require('fluxes/components/back-button.jsx')
+                       }}>
       </PageWithExample>
     );
   }

@@ -1,3 +1,8 @@
+## Modal
+
+Modal component.
+
+```js
 var React = require('react');
 var Modal = require('fluxes/components/modal.jsx');
 
@@ -38,3 +43,4 @@ module.exports = React.createClass({
     );
   }
 });
+```

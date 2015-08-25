@@ -6,7 +6,9 @@ module.exports = React.createClass({
   render: function() {
     return (
       <PageWithExample doc={require('raw!../documents/link.md')}
-                       context={{Link: require('fluxes/components/link.jsx')}}>
+                       context={{
+                       Link: require('fluxes/components/link.jsx')
+                       }}>
       </PageWithExample>
     );
   }
