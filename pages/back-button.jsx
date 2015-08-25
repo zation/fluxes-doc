@@ -1,15 +1,15 @@
 var React = require('react');
 
-var PageWithExample = require('../components/page-with-example.jsx');
+var Document = require('../components/document.jsx');
 
 module.exports = React.createClass({
   render: function() {
     return (
-      <PageWithExample doc={require('raw!../documents/back-button.md')}
-                       context={{
-                       BackButton: require('fluxes/components/back-button.jsx')
-                       }}>
-      </PageWithExample>
+      <Document markdown={require('raw!../documents/back-button.md')}
+                context={{
+                BackButton: require('fluxes/components/back-button.jsx')
+                }}>
+      </Document>
     );
   }
 });

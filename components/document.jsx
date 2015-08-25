@@ -37,7 +37,7 @@ module.exports = React.createClass({
   },
 
   render: function() {
-    var html = marked(this.props.doc, {renderer: renderer});
+    var html = marked(this.props.markdown, {renderer: renderer});
     return (
       <div dangerouslySetInnerHTML={{__html: html}}></div>
     );
