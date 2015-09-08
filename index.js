@@ -8,4 +8,5 @@ var Page = require('./components/page.jsx');
 
 React.render(React.createElement(Page), window.document.getElementById('page'));
 
-Router.create(require('./routes'));
+var router = Router.create(require('./routes'));
+router.init();
